@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "/Users/ibeketov/dev/EnterpriseDataScientist"
+		}
+	],
+	"settings": {
+		"python.pythonPath": "project1/bin/python3.7"
+	}
+}
