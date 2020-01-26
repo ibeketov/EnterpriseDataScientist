@@ -3,8 +3,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import r2_score, mean_squared_error
 
-def colcheck(df):
+
+def col_check(df):
     """
     Prints short info about columns
     :param df: takes into a dataframe
@@ -16,7 +20,7 @@ def colcheck(df):
         print('Missing (%):', df[col].isnull().mean())
         print(10*'-')
 
-def showmissing(df, lower_thresh=0.0):
+def show_missing(df, lower_thresh=0.0):
     """
     Shows a barplot of the missing values of all columns.
     :param df: takes into a pandas dataframe.
