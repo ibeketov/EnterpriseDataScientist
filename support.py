@@ -12,7 +12,6 @@ def col_check(df):
     """
     Prints short info about columns
     :param df: takes into a dataframe
-    :return:
     """
     columns = df.columns.tolist()
     for col in columns:

@@ -75,9 +75,15 @@ The correlation coefficient is 0.10 so there is connection between prices and re
 
 ### Modelling
 
-The goal of the modeling is to find out what features have an impact on the price. A Linear Regression model was chosen. The results where a R squared value of 0.5. But what does this value mean? It basically means how good can our model predict the price compared to the actual price. A visualization makes this more clear.
+The goal of the modeling is to find out what features have an impact on the price. A Linear Regression model was chosen. The results where a R squared value of 0.51. But what does this value mean? It basically means how good can our model predict the price compared to the actual price. A visualization makes this more clear.
 
 ![Histogram: Price prediction](./images/price_prediction.png "Price prediction")
+
+The following plot shows the R^2 values based on the training set and an independent test set.
+
+![Number of features vs R2](./images/rsquared_features.png "Number of features vs R2")
+
+So looks like that more features makes model more accurate
 
 #### Which neighborhood yields the highest returns?
 
@@ -85,11 +91,11 @@ But how exactly the neighborhood influenced on price?
 
 ![Histogram: Neighborhood impact](./images/price_loc.png "Neighborhood impact")
 
-So as we can see clearly that Marzahn-Hellersdorf, Charlottenburg-Wilmersdorf, Neukölln and finally Mitte, have the most positive effect on price. 
+So as we can see clearly that Friedrichshain-Kreuzberg, Mitte and Pankow have the most positive effect on price. 
 
 #### What other amenities have an impact on the price?
 
-It seems that the fireplace and conditioner have high influence on the price. But if someone wonts to improve the listings it can be good idea to add an iron and a on bedroom door.
+It seems that the fireplace and conditioner have high influence on the price. But in any case this influence is rather low.
 
 ![Histogram: Features impact](./images/amenities.png "Features impact")
 
