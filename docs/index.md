@@ -1,4 +1,4 @@
-# How to make your apartments more interesting?
+# Analyze and price modeling for AirBnB offers in Berlin 
 
 ## Introduction
 AirBNB is a community based platform in which users can offer their private accommodations to other people. So the platform acts as a kind of broker. So the right price policy is an important success factor. But how to define the price that would be  interesting for a people and will have a good return margins? So let's try to investigate this topic.
@@ -16,12 +16,13 @@ The CRISP-DM process can be broken down into several steps which help understand
 
 ## Business questions
 
-I decided to work with Berlin data. Because I live here and I know some of the neighborhoods here. I identified such questions:
+I decided to work with Berlin data and analyze the important price factors. Because I live here and I know some of the neighborhoods here. I identified such questions:
 
     1. Is there a relation between rating and prices? 
     2. Is there a relation between number of reviews and prices? 
     3. Which neighborhood yields the highest returns?
     4. Can be price predicted based on the features and location?
+    5. What features have the biggest impact on pricies?
 
 ## Data understanding
 
@@ -71,7 +72,7 @@ But what about reviews numbers. Is it important to have many reviews?
 
 The correlation coefficient is 0.10 so there is connection between prices and reviews. Interesting that the bigger numbers of reviews have the apartments with the low price. 
 
-![Histogram: Price and reviews](./images/price_rating.png "Price and reviews")
+![Histogram: Price and reviews](./images/price_review.png "Price and reviews")
 
 ### Modelling
 
@@ -98,6 +99,13 @@ So as we can see clearly that Friedrichshain-Kreuzberg, Mitte and Pankow have th
 It seems that the fireplace and conditioner have high influence on the price. But in any case this influence is rather low.
 
 ![Histogram: Features impact](./images/amenities.png "Features impact")
+
+#### What features have the biggest impact on prices?
+
+As we can see on the following diagram the most important features are: number of the bedrooms and apartment type.  
+
+![Features impact](./images/price_features.png "Features impact")
+
 
 ### Deployment
 
